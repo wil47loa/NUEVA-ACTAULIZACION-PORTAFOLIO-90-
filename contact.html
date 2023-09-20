@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilmer</title>
+    <!-- Bootstrap  -->  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Fugaz+One&family=Girassol&family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Fugaz+One&family=Girassol&family=IM+Fell+Great+Primer+SC&family=Spectral+SC:wght@200&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div id="sonido">
+            <audio id="myaudio">
+                <source src="   ">
+            </audio>
+            <img class="fase fa-sonidosalida  sonido-salida" src="img/musica.png">
+            <span>Sonido</span>
+            <div class="on-off">
+                <span class="off">OFF</span>
+                <span class="on">ON</span>
+            </div>
+        </div>
+        <div class="btns-cierre fas">
+            <img class="menu" src="img/menu.png" alt="me" >
+            <img class="cerrarx" src="img/letra-x.png" alt="X" >
+        </div>
+    </header>
+    <main>
+        <aside class="lateral">
+            <div class="lateral-wrapper">
+                <div class="logo-section">
+                    <a class="logo"  rel="home" href="#">
+                        <img src="img/logo1.png" alt="logo">
+                        <samp>Wilmer</samp>
+                    </a>
+                    <samp>Web Developer</samp>
+                </div>
+
+                <nav class="nav-links">
+                    <a href="index.html"><img src="img/hogar1.png" alt=""> Home</a>
+                    <a href="about.html"><img src="img/usuario1.png" alt="">About</a>
+                    <a href="skills.html"><img src="img/habilidades1.png" alt="">Skills</a>
+                    <a href="projects.html"><img src="img/maleta2.png" alt=""> Projects</a>
+                    <a href="contact.html"><img src="img/chat1.png" alt=""> Contact</a>
+                </nav>
+                <!-- Redes sociales baner lateral -->
+                <ul class="social-icons">
+                    <li>
+                        <a href="https://www.linkedin.com/in/wilmer-loaiza-1596a826a" target="_blank">
+                            <img src="img/linkedin1.png" alt="linkedin1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/wil47loa" target="_blank">
+                            <img src="img/logotipo-de-github1.png" alt="github">                            
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        
+        <!-- SECTION CONTACT -->
+        <section class="section-contact" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="container">
+                <div class="contact-inicio">
+                    <h1>Contacto</h1>
+                    <p>Ponte en contacto conmigo a través de las redes sociales o el correo electrónico.</p>
+
+                    <article class="contact-items">
+                        <a href="mailto:wilmerloaizacarranza@gmail.com" target="_blank"><img src="img/correo1.png" alt="correo"></a>
+                        <a href="https://www.linkedin.com/in/wilmer-loaiza-1596a826a" target="_blank"><img src="img/linkedin1.png" alt="linkedin1"></a>
+                        <a href="https://api.whatsapp.com/send?phone=3195945763&text=Hola%20Quiero%20más%20información%20Del%20Desarrollo-WEB" target="_blank"><img src="img/whatsapp1.png" alt="whatsapp1"></a>
+                        <a href="https://github.com/wil47loa" target="_blank"><img src="img/logotipo-de-github1.png" alt="logotipo-de-github1"></a>  
+                    </article>
+                </div>
+                <div class="contact-enviar">
+                    <p>Envíame un correo electrónico</p>
+                    <div class="row">
+                        <article class="col-lg-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="First name">
+                                <label for="floatingInput">Nombre</label>
+                              </div>
+                              <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Email</label>
+                            </div>
+                        </article>
+                        
+                        <article class="col-lg-6 comment">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 133px"></textarea>
+                                <label for="floatingTextarea2">Comments</label>
+                            </div>   
+                        </article>
+                        <div class="envio-btn">
+                            <a href="#"><samp>Enviar</samp></a>              
+                        </div>
+
+                    </div>
+                </div>
+       
+            </div>
+        </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

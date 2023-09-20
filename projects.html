@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilmer</title>
+    <!-- Bootstrap  -->  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Fugaz+One&family=Girassol&family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Fugaz+One&family=Girassol&family=IM+Fell+Great+Primer+SC&family=Spectral+SC:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <header>
+
+        <div id="sonido">
+            <audio id="myaudio">
+                <source src="   ">
+            </audio>
+            <img class="fase fa-sonidosalida  sonido-salida" src="img/musica.png">
+            <span>Sonido</span>
+            <div class="on-off">
+                <span class="off">OFF</span>
+                <span class="on">ON</span>
+            </div>
+        </div>
+        <div class="btns-cierre fas">
+            <img class="menu" src="img/menu.png" alt="me" >
+            <img class="cerrarx" src="img/letra-x.png" alt="X" >
+        </div>
+    </header>
+
+    <main>
+        <aside class="lateral">          
+            <div class="lateral-wrapper">
+                <div class="logo-section">
+                    <a class="logo"  rel="home" href="#">
+                        <img src="img/logo1.png" alt="logo">
+                        <samp>Wilmer</samp>
+                    </a>
+                    <samp>Web Developer</samp>
+                </div>
+                <nav class="nav-links">
+                    <a href="index.html"><img src="img/hogar1.png" alt=""> Home</a>
+                    <a href="about.html"><img src="img/usuario1.png" alt="">About</a>
+                    <a href="skills.html"><img src="img/habilidades1.png" alt="">Skills</a>
+                    <a href="projects.html"><img src="img/maleta2.png" alt=""> Projects</a>
+                    <a href="contact.html"><img src="img/chat1.png" alt=""> Contact</a>
+                </nav>
+                <!-- Redes sociales baner lateral -->
+                <ul class="social-icons">
+                    <li>
+                        <a href="https://www.linkedin.com/in/wilmer-loaiza-1596a826a" target="_blank">
+                            <img src="img/linkedin1.png" alt="linkedin1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/wil47loa" target="_blank">
+                            <img src="img/logotipo-de-github1.png" alt="github">                            
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- SECTION de proyectos -->
+        <section class="projects-principal">
+            <div class="projects-inivio-tex">
+                <h1>
+                    Projects
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, laudantium harum.br <br> Autem nesciunt, quis aliquid numquam dicta, harum reiciendis in officia consectetur, quod et dolore! Tempore facilis quisquam eligendi soluta.
+                </p>
+            </div> 
+            <div class="container"> 
+                <div class="row">
+                    <article class="col-lg-4 col-md-4">
+                        <div class="proyecto-img" >
+                            <article class="col-lg-12 col-md-12">
+                                <a href=" https://wil47loa.github.io/portafolio-actualizado-19/" target="_blank"><img src="img/image28.jpg" alt="tirantes1"></a>
+                                <a href="https://wil47loa.github.io/GYM-fitness-W/" target="_blank"><img src="img/image27.jpg" alt="ui1"></a>
+                            </article>
+                        </div>
+                    </article>        
+                    <article class="col-lg-4 col-md-4">
+                        <div class="proyecto-img" >
+                            <article class="col-lg-12 col-md-12">
+                                <a href="https://wil47loa.github.io/webseries47/" target="_blank"><img src="img/image25.jpg" alt="tirantes1"></a>
+                                <a href="https://wil47loa.github.io/Rumbo-Turismo/" target="_blank"><img src="img/image24.jpg" alt="ui1"></a>
+                            </article>
+                        </div>
+                    </article>
+                    <article class="col-lg-4 col-md-4">
+                        <div class="proyecto-img" >
+                            <article class="col-lg-12 col-md-12 ">
+                                <a href="https://wil47loa.github.io/Web_Bootstrap/" target="_blank"><img src="img/image26.jpg" alt="tirantes1"></a>
+                                <a href="https://wil47loa.github.io/MrPotato/" target="_blank"><img src="img/image29.jpg" alt="ui1"></a>
+                            </article>
+                        </div>
+                    </article>                           
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Scrips DE BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
+    <!-- SCRIP DE LA NASA -->
+    <script 
+     type="text/javascript" 
+     src="https://hovertree.com/texiao/html5/index/hovertreewelcome.js">
+    </script>
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

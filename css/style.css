@@ -1,0 +1,1020 @@
+
+/* Variables */
+:root{
+    --color-fondo-secundario: rgb(8,5,16,0.4);
+    --color-principal-fondo: #1D1D1D ;
+    --color-principal-lateral:#383535;
+    --color-texto-letra:#ffffff;
+    --color-texto-trassitions:#3D8BE7;
+
+    --fontsze-titles:40px;
+    --fontsze-parrafo:25px;
+}
+
+/* COlor de fondo  rgva */
+ /* rgba(8,5,16,0.4)    #1D1D1D */
+
+
+
+
+/* Botones de la paguina R */
+
+.btn-partafolio{
+    background: var(--color-principal #ff0099);
+    font-size: var(fontsze-parrafo);
+}
+
+body{
+    background-color: var(--color-principal-fondo);
+}
+
+#scrollPath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255,255,0.05);
+}
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate1 5s linear infinite;
+}
+
+@keyframes animate1{
+    0%,100%
+    {
+        filter: hue-rotate(0deg);
+    }
+    50%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+#progressbar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(10px);
+}
+#progressbar:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(30px);
+}
+
+header{
+    width: 95%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    z-index: 2;
+}
+
+#sonido{
+    width: 150px;
+    height: 50px;
+    padding: 7px;
+    background-color: var(--color-terciario);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: var(--color-texto-letra);
+}
+.sonido-salida{
+    width: 35%;
+    font-size: 1.2rem;
+    margin: 2px;
+    color: var(--color-terciario);
+}
+.on-off{
+    cursor: pointer;
+    margin-left: 5px;
+
+}
+.off{
+    color: #ff0099;
+}
+.on{
+    display: none;
+    color: var(--color-terciario);
+}
+
+.btns-cierre {
+    width: 115px;
+    left: 70px;
+    position: relative;
+    font-size: var(--fontsze-parrafo);
+    padding: 7px;
+    background: var(--color-principal);
+    color: var(--color-terciario);
+    cursor: pointer;
+}
+
+.btns-cierre .cerrarx{
+    width: 50px;
+    display: none;
+}
+
+.btns-cierre .menu{
+    width: 40px;    
+}
+
+
+/* Baner lateral  */
+.lateral{
+    width: 100%;
+    height: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden ;
+    z-index: 1;
+    background-color: var(--color-principal-lateral);
+    color: var(--color-texto-letra);
+}
+/*                    */
+.show-nav{
+    height: 100%;
+    overflow: visible;
+}
+.lateral-wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--color-principal-lateral);
+}
+.logo-section{
+    min-height: 32vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-principal-lateral);
+    color: var(--color-secundario);
+}
+.logo{
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+}
+.logo samp{
+    font-size: var(--fontsze-parrafo);
+    color: aliceblue;
+}
+.logo-section > span{
+    margin-top: 25px;
+    font-size: 20px;
+    font-size: 'Times New Roman','Times',serif;
+}
+
+/* nav section starts here */
+.nav-links a{
+    display: block;
+    /* text-align: center; */
+    line-height: 60px;
+    text-decoration: none;
+    background-color: var(--color-principal-lateral);
+    font-size: 20px;
+    color: var(--color-texto-letra);
+    margin: 15px;
+    font-family: 'IM Fell Great Primer SC', serif;
+}
+.nav-links a:hover{
+    color: var(--color-texto-trassitions);
+}
+.nav-links a::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    /* background-color:var(--color-texto-trassitions); */
+}
+/* Social iconos  */
+.social-icons{
+    list-style: none;
+    display: flex;
+    margin-bottom: 30px;
+}
+.social-icons li{
+    width: 60px;
+    font-size: 10px;
+}
+.social-icons li a{
+    text-decoration: none;
+    color: var(--color-principal);
+}
+.social-icons li a:hover{
+    color: var(--color-principal);
+}
+
+/* Nav barra ends here  */
+#section-home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    background: var(--color-fondo-secundario);
+}
+
+.text-zone h1{
+    font-size: 60px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    color: var(--color-texto-letra);
+    font-family: 'Spectral SC', serif;
+
+}
+
+/* .text-zone .text1{
+    font-size: 60px;
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+.text-zone .firs-text{
+    color: var(--color-texto-letra);
+}
+.text-zone .sec-text{
+
+    color: var(--color-texto-trassitions);
+}
+.text-zone .sec-text::before{
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    height: 20%;
+    width: 100%;
+    background-color: var(--color-principal-fondo);
+    border-left:2px solid #ff0099;
+    animation: animate 4s steps(12) infinite ;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+} */
+
+.text-zone img{
+    width: 80px;
+    height: auto;
+}
+.text-zone .gra-text{
+    margin-top: 30px;
+    color: var(--color-texto-trassitions);
+    letter-spacing: 3px;
+    font-size: 20px;
+    position: relative;
+}
+
+/* Descargar un CV */
+.descargar-cv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 160px;
+}
+.descargar-cv a{
+    position: relative;   
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--color-texto-trassitions);
+    margin: 0PX;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 1px;
+    color: #ffffff;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.descargar-cv a:hover{
+    color: #ffffff;
+    box-shadow: 0 0 10px #3D8BE7,
+    0 0 20px #3D8BE7,
+    0 0 40px #3D8BE7;
+}
+.descargar-cv a samp{
+    position: relative;
+    z-index: 100;
+}
+.descargar-cv a:nth-child(2){
+    filter: hue-rotate(80deg);
+}
+.descargar-cv a::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #3D8BE7;
+    box-shadow: 5px -8px 0 #ffffff,
+                5px  8px 0  #3D8BE7;
+    transition: width 0.5s, left 0.5s, height 0.5s,
+    box-shadow 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+.descargar-cv a:hover::before{
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 #3D8BE7,
+                5px 0 0  #3D8BE7;;
+    transition-delay: 0s,0.5s,1s,1s;
+}
+
+/* ------ */
+.descargar-cv a::after{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #3D8BE7;
+    box-shadow: -5px -8px 0 #3D8BE7,
+                -5px  8px 0  #ffffff;
+    transition: width 0.5s, left 0.5s, height 0.5s,
+    box-shadow 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+.descargar-cv a:hover::after{
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0 0 #3D8BE7,
+                -5px 0 0  #3D8BE7;;
+    transition-delay: 0s,0.5s,1s,1s;
+}
+
+
+/* Secion Foto  */
+.fotohome{
+    position: relative;
+    left: 40px;
+    flex-direction: column;
+    display: flex;
+    width: 600px;
+    height: auto;
+    overflow: hidden;
+    margin-right: 90px;
+} 
+
+.pie-home{
+    position: absolute;
+    bottom: 160px;
+    width: 60%;
+    height: auto;
+    height: auto;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pie-home img{
+    width: 15%;
+    height: auto;
+}
+
+
+
+/* Lateral para la pantalla mas grande fija New  */
+
+@media screen and (min-width: 950px) {
+
+
+    header{
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .btns-cierre{
+        display: none;
+    }
+    .lateral{
+        width: 10%;
+        height: 100%;
+    }
+    .lateral-wrapper{
+        height: 80%;
+    }
+    .logo-section{
+        text-align: center;
+        min-height: 25vh;
+        font-size: 20px;
+    }
+    .logo img{
+        width: 80px;
+        height: auto;
+    }
+    .social-icons{
+        width: 90%;
+        align-items: center;
+    }
+    .social-icons img{
+       width: 70%;
+       height: 70%;
+    }
+
+    
+    /* home section */
+    #section-home{
+        padding-left: 14rem;
+    }
+    .text-zone{
+        position: relative;
+        left: 90px;
+    }
+
+    .text-zone h1{
+        font-size: 5.3rem;
+        line-height: 85px;
+        letter-spacing: -2px;
+        color: var(--color-texto-letra);
+    }
+    .text-zone img{
+        width: 20%;
+        height: 20%;
+    }
+    .text-zone .gray-text{
+        font-size: 1rem;
+    }
+    .scroll-down{
+        right: -30px;
+        bottom: 3.3rem;
+    }
+    .scroll-down--left{
+        left: 110px;
+        right: auto;
+    }
+    /* this is tht end of section home */
+
+    /* part 2 media query bigger screens starts here */
+    #section-work{
+        width: 85%;
+        margin: 0 30px 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .text-zone-2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #header{
+        font-size: 2.5rem;
+    }
+    .text-zone-2 p{
+        width: 700px;
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+    .fake-big-2{
+        font-size: 25rem;
+        font-weight: 700;
+        left: 560px;
+        top: 0;
+    }
+    .fake-magicwall{
+        padding-left: 8.5rem;
+    }
+    .fake-magicwall ul li{
+        width: 242px;
+        height: 236px;
+    }
+
+    .fotohome{
+        position: relative;
+        left: 160px;
+        /* flex-direction: column; */
+        display: flex;
+        width: 700px;
+        height: auto;
+        /* overflow: hidden; */
+        margin-right: 90px;
+    } 
+    
+    .pie-home{
+        position: relative;
+        bottom: -70px;
+        width: 250px;
+        height: auto;
+    }
+    
+    .pie-home img{
+        width: 20%;
+        height: auto;
+    }
+    
+
+
+}
+
+
+/* -------------------------------ABOUT  = HTML ---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.section-about{
+    min-height: 100vh;
+    padding-left: 11%;
+    background: var(--color-fondo-secundario);
+} 
+
+.about-inicio{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+.about-inicio h1{
+    font-size:50px ;
+    color: var(--color-texto-trassitions);
+    font-family: 'IM Fell Great Primer SC', serif;
+
+}
+.about-inicio p{
+    color: var(--color-texto-letra);
+}
+
+.about-parrafos{
+    color: var(--color-texto-letra);
+    position: relative;
+    top: 230px;
+    margin-right: 30px;
+    margin-left: -10px;
+}
+
+
+.about-foto{
+    display: flex;
+    position:relative;
+    top: 240px;
+    left: 80px;
+    width: 400px;
+    height: 400px;
+}
+
+.about-foto img{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    align-items: center;
+
+}
+/* _-------------------------------CALIFICASION_______________________ */
+.section-calificasion{
+
+    min-height: 100vh;
+    padding-left: 11%;
+    background: var(--color-fondo-secundario);
+}
+
+.cal-titulo{
+    position: absolute;
+    margin-top: 60px;
+    width: 65%;
+    height: auto;
+}
+.cal-titulo h1{
+    text-align: center;
+    color: var(--color-texto-trassitions);
+    font-size: 50px;
+}
+.educacion{
+    position: relative;
+    /* left: 150px; */
+    width: 70%;
+    height: auto;
+    margin-top: 200px;
+    color: var(--color-texto-letra);
+    align-items: center;
+}
+.educacion h3{
+    font-size: var(--fontsze-titles);
+    text-align: center;
+}
+.educacion ul{
+    text-decoration: none;
+    margin-left: 38%;
+}
+/* _____________ */
+.experiencia{
+    position: relative;
+    /* left: 100px; */
+    width: 70%;
+    height: auto;
+    margin-top: 200px;
+    color: var(--color-texto-letra);
+    align-items: center;
+}
+.experiencia h3{
+    font-size: var(--fontsze-titles);
+    text-align: center;
+}
+.experiencia ul{
+    text-decoration: none;
+    margin-left: 38%;
+}
+
+
+/* -----------------------------------------------------SECTION CONTACT = Html----------------------------------------------------------- */
+
+.section-contact{
+    width: 100%;
+    height: 100vh;
+    background: var(--color-fondo-secundario);
+}
+.contact-inicio{
+    position: relative;
+    left: 30px;
+    top: 90px;
+    width: 100%;
+    height: auto;
+}
+.contact-inicio h1{
+    font-size: 50px;
+    color: var(--color-texto-trassitions);
+    font-family: 'IM Fell Great Primer SC', serif;
+}
+.contact-inicio p{
+    color: var(--color-texto-letra);
+}
+
+.contact-items{
+    position: relative;
+    top: 20px;
+}
+.contact-items img{
+    cursor: pointer;
+    width: 50px;
+    margin-right: 20px;
+}
+
+
+.contact-enviar{
+    position: relative;
+    top: 300px;
+    left:30px ;
+    width: 80%;
+}
+
+.contact-enviar p{
+    color: var(--color-texto-letra);
+
+
+}
+
+.contact-enviar .form-control{
+    color: var(--color-texto-letra);
+    background-color: #736b6b;
+    border: var(--bs-border-width) solid var(--color-texto-trassitions);
+}
+
+.envio-btn{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 160px;
+}
+.envio-btn a{
+    position: relative;   
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--color-texto-trassitions);
+    margin: 0PX;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 1px;
+    color: #ffffff;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.envio-btn a:hover{
+    color: #ffffff;
+    box-shadow: 0 0 10px #3D8BE7,
+    0 0 20px #3D8BE7,
+    0 0 40px #3D8BE7;
+}
+.envio-btn a samp{
+    position: relative;
+    z-index: 100;
+}
+.envio-btn a:nth-child(2){
+    filter: hue-rotate(80deg);
+}
+.envio-btn a::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #3D8BE7;
+    box-shadow: 5px -8px 0 #ffffff,
+                5px  8px 0  #3D8BE7;
+    transition: width 0.5s, left 0.5s, height 0.5s,
+    box-shadow 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+.envio-btn a:hover::before{
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 #3D8BE7,
+                5px 0 0  #3D8BE7;;
+    transition-delay: 0s,0.5s,1s,1s;
+}
+
+/* ------ */
+.envio-btn a::after{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #3D8BE7;
+    box-shadow: -5px -8px 0 #3D8BE7,
+                -5px  8px 0  #ffffff;
+    transition: width 0.5s, left 0.5s, height 0.5s,
+    box-shadow 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+.envio-btn a:hover::after{
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0 0 #3D8BE7,
+                -5px 0 0  #3D8BE7;;
+    transition-delay: 0s,0.5s,1s,1s;
+}
+
+
+/* ______________________---------------------------Pagina SIKLLS_______________________ */
+
+.section-skills{
+    height: 100vh;
+    background: var(--color-fondo-secundario);
+}
+.inicio-skills{
+    position: relative;
+    top: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.inicio-skills h1{
+    color: var(--color-texto-trassitions);
+    font-size: 50px;
+    font-family: 'IM Fell Great Primer SC', serif;
+}
+.inicio-skills p{
+    position: relative;
+    top: 20px;
+    color: var(--color-texto-letra);
+}
+
+.skills-desarrollo{
+    position: relative;
+    top: 150px;
+}
+
+.skills-desarrollo p{
+    margin-left: 100px;
+    color: var(--color-texto-letra);
+    font-size: 20px;
+}
+
+.skills-programacion-diseño{
+    position: relative;
+    top: 150px;
+    display: flex; 
+    text-align: center;  
+}
+.skills-programacion-diseño img{
+    width: 97px;
+    margin-top: 30px;  
+}
+.skills-programacion-diseño p{
+    font-size: 20px;
+    color: var(--color-texto-letra);
+}
+/* PROYECTOS PAGUINA */
+.projects-principal{
+    position: absolute;
+    margin-left:  10%;
+    width: 90%;
+    height: 100vh;
+    background: var(--color-fondo-secundario);
+}
+/* .projects-inivio-tex{
+    position: relative;
+    top: 70px;
+    left: 70px;
+    width: 60%;
+    height: 20%;
+} */
+
+.projects-inivio-tex h1{
+    margin-left: 200px;
+    margin-top: 30px;
+    font-size: 50px;
+    color: var(--color-texto-trassitions);
+    font-family: 'IM Fell Great Primer SC', serif;
+}
+.projects-inivio-tex p{
+    margin-left: 200px;
+    margin-top: 30px;
+    color: var(--color-texto-letra);
+}
+
+
+.proyecto-img{
+    position: relative;
+    top: 40px;
+    display: flex; 
+    text-align: center;  
+}
+.proyecto-img img{
+    width: 70%;
+    margin-top: 10px;  
+    cursor: pointer;
+    border: 1px solid var(--color-texto-trassitions);
+}
+
+/* tabled*/
+@media screen and (min-width:768px) and (max-width:990px){
+    .btns-cierre{
+        left: 0px    
+    }
+    .btns-cierre .menu{
+        margin-left:70px;
+
+    }
+    .section-skills{
+        height: 123vh;
+    }
+    .pie-home {
+        margin-bottom: -270px;
+    }
+    .pie-home img{
+        width: 25%;
+    }
+
+    /* ABOUT */
+    .educacion{
+        width: 87%;
+    }
+    .educacion ul{
+        margin-left: 30%;
+        margin-right: 30px;
+    }
+    .experiencia{
+        width: 180%;    
+    }
+    .experiencia ul{
+        margin-left: 30%;
+        margin-right: 30px;
+    }
+    /* SEction proyectos */
+    .projects-principal{
+        width: 100%;
+        margin-left: 0;
+    }
+    .projects-inivio-tex h1{
+        margin-left: 40px;
+        margin-top: 90px;
+
+    }
+    .projects-inivio-tex p{
+        margin-left: 40px;
+        margin-top: 30px;
+        margin-right: 40px;
+    }
+    
+    .proyecto-img img{
+        width: 110%;
+        margin-top: 10px;  
+        cursor: pointer;
+    }
+  
+}
+
+/* SMARTPHONE _ */
+@media screen and (min-width:320px) and (max-width:600px){
+    .about-inicio{
+        left: 30px;
+    }
+    .about-inicio h1{
+        font-size: 40px;
+    }
+    .about-foto{
+        display: none;
+    }
+    .pie-home {
+        margin-bottom: -270px;
+    }
+    .pie-home img{
+        width: 25%;
+    }
+
+    /* index contacto */
+    .section-skills{
+        height: 165vh;
+    }
+    .contact-inicio{
+        left: 13px;
+    }
+    .contact-enviar{
+        top: 190px;
+    }
+    .contact-inicio p {
+        margin-right: 13px;
+    }
+    
+    .skills-programacion-diseño img{
+        margin-left: 15px;  
+    }
+    .skills-programacion-diseño p{
+        font-size: 15px;
+    }
+
+    /* ABOUT */
+    .educacion{
+        width: 90%;
+    }
+    .educacion ul{
+        margin-left: 20px;
+        margin-right: 10px;
+    } 
+    .experiencia{
+        width: 90%;    
+    }
+    .experiencia ul{
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    /* SEtion proyectos */
+    .projects-principal{
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+    .projects-inivio-tex h1{
+        margin-left: 40px;
+        margin-top: 90px;
+
+    }
+    .projects-inivio-tex p{
+        margin-left: 20px;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    
+    .proyecto-img img{
+        width: 80%;
+        margin-top: 30px; 
+        margin-left: 30px; 
+        cursor: pointer;
+    }
+
+    
+}
